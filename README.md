@@ -6,6 +6,13 @@
   <h1>C++ Quadratic Equation Solver</h1>
 </div>
 
+This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. It calculates the roots based on the discriminant, providing either two distinct real roots, one repeated root, or notifying the user when there are no real solutions. The program includes input validation to ensure correct user input and displays results with clear formatting.
+#### Key Features:
+  - Handles invalid input with error checking
+  - Implements efficient computation and clear output formatting
+  - Provides informative messages for equations with no real solutions
+  - Supports both distinct real roots and repeated roots
+
 ## Development Environment:
 To develop and test the solutions, I used the online IDE [OnlineGDB.com](https://www.onlinegdb.com/online_c++_compiler), which offers an easy-to-use compiler and debugger for C++.
 
