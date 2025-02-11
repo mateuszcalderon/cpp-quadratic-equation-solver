@@ -6,13 +6,13 @@
   <h1>C++ Quadratic Equation Solver</h1>
 </div>
 
-This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. It calculates the roots based on the discriminant, providing either two distinct real roots, one repeated root, or notifying the user when there are no real solutions. The program includes input validation to ensure correct user input and displays results with clear formatting.
+This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. It calculates the roots using the discriminant, which can result in two distinct real roots, one repeated root, or a notification if there are no real solutions. The program includes input validation to ensure correct user input and displays results with clear formatting.
 
 #### Key Features:
-  - Handles invalid input with error checking
-  - Implements efficient computation and clear output formatting
-  - Provides informative messages for equations with no real solutions
-  - Supports both distinct real roots and repeated roots
+  - Handles invalid input with error checking.
+  - Implements efficient computation and clear output formatting.
+  - Provides informative messages for equations with no real solutions.
+  - Supports both distinct real roots and repeated roots.
 
 ## Code Walkthrough:
 #### Libraries:
@@ -23,10 +23,10 @@ This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. 
   #include <limits>
 ```
 
-  - ` <iostream> `: Used for input/output operations
-  - ` <cmath> `: Provides mathematical functions like ` pow ` and ` sqrt `
-  - ` <iomanip> `: Used for controlling the output format, such as setting decimal precision
-  - ` <limits> `: Allows checking for input errors and handling input buffer
+  - ` <iostream> `: Used for input/output operations.
+  - ` <cmath> `: Provides mathematical functions like ` pow ` and ` sqrt `.
+  - ` <iomanip> `: Used for controlling the output format, such as setting decimal precision.
+  - ` <limits> `: Allows checking for input errors and handling input buffer.
 
 #### GetInput Function:
 ```cpp
@@ -41,8 +41,8 @@ This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. 
   }
 ```
 
-  - **Purpose:** Ensures that the user inputs valid numerical values. If the input fails, it clears the input buffer and prompts the user to try again
-  - **How it works:** The function reads input from the user and checks if the input was successful using ` std::cin.fail() `. If the input is invalid (e.g., non-numeric input), it clears the error flag and ignores the invalid input
+  - **Purpose:** Ensures that the user inputs valid numerical values. If the input fails, it clears the input buffer and prompts the user to try again.
+  - **How it works:** The function reads input from the user and checks if the input was successful using ` std::cin.fail() `. If the input is invalid (e.g., non-numeric input), it clears the error flag and ignores the invalid input.
 
 #### Main Function and 'a' Input Check:
 ```cpp
@@ -61,9 +61,9 @@ This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. 
   }
 ```
 
-  - The program asks the user to input values for the quadratic equation's coefficients (` a `, ` b `, and ` c `)
-  - It uses the ` GetInput ` function to ensure that all inputs are valid
-  - The program ensures that ` a ` is a valid, non-zero value (since a = 0 would not represent a quadratic equation)
+  - The program asks the user to input values for the quadratic equation's coefficients (` a `, ` b `, and ` c `).
+  - It uses the ` GetInput ` function to ensure that all inputs are valid.
+  - The program ensures that ` a ` is a valid, non-zero value (since a = 0 would not represent a quadratic equation).
 
 #### 'b' and 'c' Input:
 ```cpp
@@ -77,7 +77,7 @@ This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. 
   }
 ```
 
-  - The program prompts the user for values of ` b ` and ` c `, ensuring valid inputs for both
+  - The program prompts the user for values of ` b ` and ` c `, ensuring valid inputs for both.
 
 #### Discriminant and Roots Calculation:
 ```cpp
@@ -91,9 +91,9 @@ This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. 
       const double x2 = (-b - std::sqrt(delta)) / (2 * a);
 ```
 
-  - The discriminant (` delta `) is calculated using the formula _b² - 4ac_. The discriminant helps determine the number and type of roots of the equation
-  - If ` delta ` is negative, the equation has no real roots, and the program outputs this information
-  - If ` delta ` is non-negative, the program calculates two real roots (` x1 ` and ` x2 `) using the quadratic formula
+  - The discriminant (` delta `) is calculated using the formula _b² - 4ac_. The discriminant helps determine the number and type of roots of the equation.
+  - If ` delta ` is negative, the equation has no real roots, and the program outputs this information.
+  - If ` delta ` is non-negative, the program calculates two real roots (` x1 ` and ` x2 `) using the quadratic formula.
 
 #### Output the Roots:
 ```cpp
@@ -106,15 +106,15 @@ This C++ program solves quadratic equations in the form of _ax² + bx + c = 0_. 
   }
 ```
 
-- The roots are printed with one decimal place precision
-- If the discriminant is zero, both roots are equal and printed accordingly
-- If the discriminant is positive, both distinct roots are displayed
+- The roots are printed with one decimal place precision.
+- If the discriminant is zero, both roots are equal and printed accordingly.
+- If the discriminant is positive, both distinct roots are displayed.
 
 ## Development Environment:
-To develop and test the solutions, I used the online IDE [OnlineGDB.com](https://www.onlinegdb.com/online_c++_compiler), which offers an easy-to-use compiler and debugger for C++.
+To develop this project, I used the online IDE [OnlineGDB.com](https://www.onlinegdb.com/online_c++_compiler), which offers an easy-to-use compiler and debugger for C++.
 
 ## Coding Standards:
-This project follows the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Feel free to suggest improvements or share tips related to coding style.
+This project follows the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). You're welcome to suggest any improvements or share tips on coding style.
 
 ## Contact:
 Feel free to reach out to me with any questions, suggestions, or feedback!<br/>
